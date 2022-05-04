@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.container-cart {
+    transition: 0.5s all;
+    margin-top: 0px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-cart {
+    margin: 15px;
+    margin-top: 30px;
+    width: 270px;
+    height: 360px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 7.5px;
+    background-color: #f5f5f5;
+    position: relative;
+    box-shadow: 0px 0px 4px -2px #707070;
+    -moz-box-shadow: 0px 0px 4px -2px #707070;
+    -webkit-box-shadow: 0px 0px 4px -2px #707070;
+}
+
+h4 {
+    text-decoration: none;
+    font-family: 'Radio Canada', sans-serif;
+}
+
+.col-cart:hover {
+    -webkit-box-shadow: -17px 18px 19px -21px #1C2833;
+    -moz-box-shadow: -17px 18px 19px -21px #1C2833;
+    box-shadow: -17px 18px 19px -21px #1C2833;
+}
+
+a {
+    text-decoration: none;
+}
+
+.img-cart {
+    width: 270px;
+    height: 150px;
+}
+
+.text-category {
+    color: #797D7F;
+    font-size: 12px;
+}
+
+.text-title {
+    margin: 0px;
+    width: 250px;
+    color: #17202A;
+    font-size: 20px;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    line-height: 20px;
+    -webkit-box-orient: vertical;
+}
+
+.row-recent {
+    margin-top: 30px;
+    width: 72%;
+    color: #EE0048;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-recent {
+    margin: 0px;
+}
+
+.container-other {
+    margin-top: -10px;
+    width: 80%;
+    height: 41px;
+}
+
+.col-desc .desc {
+    width: 250px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #797D7F;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 23px;
+    max-height: 88px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    font-family: 'Roboto', sans-serif;
+    ;
+}
+
+@media only screen and (max-width: 600px) {
+    .container-cart {
+        transition: 0.5s all;
+        margin-top: 30px;
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .img-cart {
+        width: 100%;
+        height: 150px;
+    }
+    .col-cart {
+        margin-top: 30px;
+        height: 360px;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 7.5px;
+        background-color: #f5f5f5;
+        position: relative;
+        box-shadow: 0px 0px 4px -2px #707070;
+        -moz-box-shadow: 0px 0px 4px -2px #707070;
+        -webkit-box-shadow: 0px 0px 4px -2px #707070;
+    }
+}
+
+
+/* //tabled */
+
+@media only screen and (min-width: 600px) {
+    .container-cart {
+        transition: 0.5s all;
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

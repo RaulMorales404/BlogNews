@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "img": "https://newsweekespanol.com/wp-content/uploads/2020/02/Avances-tecnolo%CC%81gicos_apertura.jpg",
+    "category": "TECNOLOGICAS",
+    "title": "Los mejores productos tecnológicos para 2020",
+    "desc": "El mes pasado se llevó a cabo el mayor evento anual de la tecnología de consumo. Durante la más reciente edición de CES, numerosas empresas tecnológicas presentaron alrededor de 20,000 productos nuevos. Hubo televisores, dispositivos de audio, smartphones, artículos para hogares inteligentes, automóviles, computadoras, equipos portátiles, dispositivos de salud y bienestar, electrodomésticos, drones"
+  },
+  {
+    "id": 2,
+    "img": "https://static2.abc.es/media/internacional/2022/04/26/debhani-kiEH--620x349@abc.PNG",
+    "category": "CIENTIFICAS",
+    "title": "El crimen de Debhani",
+    "desc": "El 8 de abril, Debanhi Escobar, de 18 años, acudió a un fiesta con amigas en la Quinta San Lorenzo, en Nuevo León, México. Alrededor de las 01.40 del 9 de abril, la joven decidió ir a otra fiesta porque la de sus amigos ya había terminado. Así llegó a la Quinta El Diamante, localizada a solo 67 metros del lugar donde se llevaba a cabo la primera reunión. Tres horas después, salió sola y pidió un coche a través de una aplicación, del que podría haberse bajado por el acoso que estaba sufriendo."
+  },
+  {
+    "id": 3,
+    "img": "https://www.lavanguardia.com/files/image_948_465/uploads/2022/04/30/626d8fd7c5632.jpeg",
+    "category": "CIENTIFICAS",
+    "title": "Partido del Real Madrid",
+    "desc": "El próximo partido del Real Madrid a vida o muerte será este miércoles a las 21 horas en el Bernabéu ante el City paa intentar hacer una noche mágica junto a su afición para poder remontar la eliminatoria y conseguir el pase a la final de la Champions League en París"
+  },
+  {
+    "id": 4,
+    "img": "https://www.muycomputerpro.com/wp-content/uploads/2018/09/2022-nuevas-tecnologias-crearan-empleo.jpg",
+    "category": "TECNOLOGIA",
+    "title": "El Futuro del Trabajo 2018",
+    "desc": "El Foro Económico Mundial ha hecho público su informe El Futuro del Trabajo 2018 (Future of Jobs Report 2018), en el que se pinta un futuro complicado para el panorama mundial del empleo, pero no tan devastador como otras voces están prediciendo. En él se recogen datos tan inquietantes como que el avance de la robótica y la Inteligencia Artificial convertirá en obsoletos 75 millones de trabajos. Pero en el mismo informe se vislumbra un dato esperanzador, ya que se prevé la creación de 133 millones de nuevos empleos para el mismo año. Por tanto, las nuevas tecnologías crearán muchos más empleos de los que destruirán."
+  },
+  {
+    "id": 5,
+    "img": "https://media.revistagq.com/photos/61f1125fabdcdc09b0b1ae01/3:2/w_999,h_666,c_limit/Galaxy-Unpacked-2022.jpeg",
+    "category": "TECNOLOGICA",
+    "title": "Samsung Galaxy Unpacked 2022",
+    "desc": "El próximo 9 de febrero se va a celebrar Samsung Galaxy Unpacked 2022. Como el año pasado, este evento será completamente online. Y en él esperamos ver la nueva generación de Samsung Galaxy S22, con el esperadísimo Samsung Galaxy S22 Ultra a la cabeza.El primer gran evento Unpacked 2022 de Samsung tendrá lugar el 9 de febrero: eso es lo que ha dicho oficialmente Samsung. Lo que es menos oficial es lo que la compañía anunciará allí, pero es una apuesta bastante segura que el próximo evento Galaxy Unpacked servirá como trampolín para lanzar el Samsung Galaxy S22 y Galaxy S22 Ultra. Ya hemos visto un montón de filtraciones sobre esta serie de teléfonos insignia, pero todavía estamos deseando ver qué rumores se hacen realidad una vez que el Unpacked se ponga en marcha"
+  },
+  {
+    "id": 6,
+    "img": "https://ichef.bbci.co.uk/news/1024/branded_mundo/F525/production/_117175726_gettyimages-1211482465.jpg",
+    "category": "CIENTIFICAS",
+    "title": "Coronavirus: 10 buenas noticias sobre la pandemia ",
+    "desc": "La pandemia de la covid-19 trajo también buenas noticias, según el catedrático de microbiología español Ignacio López-Goñi.Hace un año escribí un artículo titulado 10 buenas noticias sobre el coronavirus. El objetivo era mostrar que la ciencia, el conocimiento y la cooperación son fundamentales para luchar contra la pandemia."
+  },
+  {
+    "id": 7,
+    "img": "https://newsweekespanol.com/wp-content/uploads/2020/02/Avances-tecnolo%CC%81gicos_02.jpg",
+    "category": "TEGNOLOGICAS",
+    "title": "LENOVO THINKPAD X1 FOLD: LA PRIMERA PC PLEGABLE",
+    "desc": "Es una laptop. No, es una tableta. Tampoco. Es una mini PC de escritorio. De hecho, esta computadora plegable es las tres cosas y más, gracias a la primera pantalla OLED de 13.3 pulgadas que literalmente se dobla. El dispositivo de 1 kilogramo se pliega para usarlo como tableta, pero si lo combinas con el teclado bluetooth (incluido) y el soporte opcional (24 dólares), se transforma en una computadora de escritorio “todo en uno”."
+  },
+  {
+    "id": 8,
+    "img": "https://www.lavanguardia.com/files/image_948_465/uploads/2022/04/30/626d8fd7c5632.jpeg",
+    "category": "CIENTIFICAS",
+    "title": "Partido del Real Madrid",
+    "desc": "El próximo partido del Real Madrid a vida o muerte será este miércoles a las 21 horas en el Bernabéu ante el City paa intentar hacer una noche mágica junto a su afición para poder remontar la eliminatoria y conseguir el pase a la final de la Champions League en París"
+  },
+  {
+    "id": 9,
+    "img": "https://p4.wallpaperbetter.com/wallpaper/510/746/411/paper-coins-economy-wallpaper-preview.jpg",
+    "category": "CIENTIFICAS",
+    "title": "Economia",
+    "desc": "La pandemia de la covid-19 trajo también buenas noticias, según el catedrático de microbiología español Ignacio López-Goñi.Hace un año escribí un artículo titulado 10 buenas noticias sobre el coronavirus. El objetivo era mostrar que la ciencia, el conocimiento y la cooperación son fundamentales para luchar contra la pandemia."
+  }
+]

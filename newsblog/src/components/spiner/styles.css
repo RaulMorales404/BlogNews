@@ -1,0 +1,7 @@
+.container-spiner{
+    z-index: 1;
+    width: 100%;
+    height: 643px;
+    display: flex;
+    justify-content: center;
+}
