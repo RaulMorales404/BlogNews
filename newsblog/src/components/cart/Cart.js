@@ -3,7 +3,7 @@ import "./style.css";
 import getDate from "./formatHours";
 import { Link } from "react-router-dom";
 
-export default function Cart({ data, id = 3 }) {
+const Cart = ({ data, id = 3,count }) => {
   if (data.urlToImage?.substr(0, 2) && data.urlToImage?.substr(0, 1) === "h") {
     return (
       <Link to={`/details/${data.urlToImage?.substr(-10)}`}>
@@ -13,7 +13,7 @@ export default function Cart({ data, id = 3 }) {
           </div>
           <div>
             <div>
-              <h4 className={id < 3 ? "text-category" : "text-categoryTwo"}>
+              <h4 className={id <= count ? "text-category" : "text-categoryTwo"}>
                 {getDate(data.publishedAt)}
               </h4>
             </div>
@@ -28,4 +28,5 @@ export default function Cart({ data, id = 3 }) {
       </Link>
     );
   }
-}
+};
+export default Cart;

@@ -11,7 +11,7 @@ export default function Nav({ back=false, route = "/details" }) {
       </div>
       {back && 
         <div>
-          <Link className="back-button" to="/home">
+          <Link className="back-button" to="/">
             <FontAwesomeIcon icon={faXmark} className="icon-back" />
           </Link>
         </div>

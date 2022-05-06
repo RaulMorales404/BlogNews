@@ -1,40 +1,36 @@
 import React from "react";
 import "./style.css";
-import { useState, useEffect } from "react";
-import getDataNews from "../../Apis";
 import Cart from "./Cart";
 
-export default function CartList({ NumberCarts = false }) {
-  const [dataNews, setDataNews] = useState([]);
+export default function CartList({ data, NumberCarts = false }) {
+  let counter = 0;
+  let i = 0;
 
-  useEffect(() => {
-    getDataNews(setDataNews);
-  }, []);
-
-  const listItem = dataNews.reverse()?.map((item, index) => {
-    if (NumberCarts === true && index < 3) {
+  const listItem = data?.map((item, index) => {
+    if (NumberCarts === true && item.urlToImage !== null && counter < 3) {
+      counter++;
       return (
         <div key={index}>
-          <Cart data={item} id={index}></Cart>
+          <Cart data={item} id={index} count={counter}></Cart>
         </div>
       );
-    } else if (!NumberCarts) {
-      return (
-        <>
-          {index === 3 ? (
-            <div className="container-other">
-              <div className="row-recent">
-                <h4 className="text-recent">TENDENCIAS</h4>
-              </div>
+    } else if (!NumberCarts && item.urlToImage !== null ) {
+      i++;
+      if (i === 4 ) {
+        return (
+          <div key={index + 50} className="container-other">
+            <div className="row-recent">
+              <h4 className="text-recent">TENDENCIAS</h4>
             </div>
-          ) : (
-            ""
-          )}
-          <div key={index}>
-            <Cart data={item} id={index}></Cart>
           </div>
-        </>
-      );
+        );
+      } else {
+        return (
+          <div key={index}>
+            <Cart data={item} id={index} count={3}></Cart>
+          </div>
+        );
+      }
     }
   });
 

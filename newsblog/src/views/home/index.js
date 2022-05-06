@@ -1,22 +1,33 @@
 import React from "react";
 import "./style.css";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import CartList from "../../components/cart";
 import Nav from "../../components/nav";
-import images from "../../Apis/getImages";
+import images from "../../images/getImages";
 import SimpleImageSlider from "react-simple-image-slider";
 import Spiner from "../../components/spiner";
 
-export default function Home() {
-  const [isLoadin, setIsLoading] = useState(true);
+import shallow from "zustand/shallow";
+import useResultsNews from "../../zustand/resultsNews";
 
+const Home = () => {
+  const { isLoading, results, getNewsResults } = useResultsNews(
+    (state) => ({
+      isLoading: state.isLoading,
+      results: state.results,
+      getNewsResults: state.getNewsResults,
+    }),
+    shallow
+  );
   useEffect(() => {
-    setIsLoading(false);
+    if (results.length == 0) {
+      getNewsResults();
+    }
   }, []);
 
   return (
     <>
-      {isLoadin ? (
+      {isLoading ? (
         <Spiner></Spiner>
       ) : (
         <div className="container">
@@ -36,10 +47,11 @@ export default function Home() {
             <h4 className="text-recent">RECIENTES</h4>
           </div>
           <div className="cart-list">
-            <CartList></CartList>
+            <CartList data={results}></CartList>
           </div>
         </div>
       )}
     </>
   );
-}
+};
+export default Home;

@@ -1,23 +1,36 @@
 import React from "react";
 import "./style.css";
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
 import Nav from "../../components/nav";
 import getDate from "../../components/cart/formatHours";
-import getDataNews from "../../Apis";
 import CartList from "../../components/cart";
 import Spiner from "../../components/spiner";
-
-export default function Details() {
+import shallow from "zustand/shallow";
+import useResultsNews from "../../zustand/resultsNews";
+import scroll from "../../components/cart/scroll";
+const Details = () => {
   let { data } = useParams();
-  const [isLoadin, setIsLoading] = useState(true);
-  const [newsData, setNewsData] = useState([]);
+  const { results, getNewsResults } = useResultsNews(
+    (state) => ({
+      isLoading: state.isLoading,
+      results: state.results,
+      getNewsResults: state.getNewsResults,
+    }),
+    shallow
+  );
 
   useEffect(() => {
-    getDataNews(setNewsData);
+    scroll();
+  }, [data]);
+
+  useEffect(() => {
+    if (results.length == 0) {
+      getNewsResults();
+    }
   }, []);
-  console.log("number----", newsData.length);
-  const news = newsData.map((item, index) => {
+
+  const news = results.map((item, index) => {
     if (data === item.urlToImage?.substr(-10)) {
       return (
         <div key={index} className="row-details">
@@ -43,12 +56,12 @@ export default function Details() {
 
   return (
     <>
-      {newsData.length ? (
+      {results.length ? (
         <div className="container">
           <Nav back="true"></Nav>
           {news}
           <div className="row-details">
-            <CartList NumberCarts={true}></CartList>
+            <CartList data={results} NumberCarts={true}></CartList>
           </div>
         </div>
       ) : (
@@ -56,4 +69,6 @@ export default function Details() {
       )}
     </>
   );
-}
+};
+
+export default Details;
