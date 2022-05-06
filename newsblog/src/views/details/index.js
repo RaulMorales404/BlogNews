@@ -25,27 +25,34 @@ const Details = () => {
   }, [data]);
 
   useEffect(() => {
-    if (results.length == 0) {
+    if (results.length === 0) {
       getNewsResults();
     }
   }, []);
+  console.log(results);
 
   const news = results.map((item, index) => {
-    if (data === item.urlToImage?.substr(-10)) {
+    if (data === item.image_url?.substr(-10)) {
       return (
         <div key={index} className="row-details">
-          <img src={item.urlToImage}></img>
+          <img src={item.image_url}></img>
           <div className="info">
             <div>
-              <h4 className="text-title">{item.title}</h4>
+              <h4 className="text-title-detail">{item.title}</h4>
             </div>
             <div>
               <h4 className={index < 2 ? "text-category" : "text-categoryTwo"}>
-                {getDate(item.publishedAt)}
+                {getDate(item.pubDate)}
               </h4>
             </div>
             <div>
+              <p className="desc-details">
+                Autor: {item.creator ? item.creator : "Sin autor"}
+              </p>
+            </div>
+            <div>
               <p className="desc-details">{item.content}</p>
+
               <p className="desc-details">{item.description}</p>
             </div>
           </div>

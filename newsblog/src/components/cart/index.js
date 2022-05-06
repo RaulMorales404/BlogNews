@@ -7,7 +7,7 @@ export default function CartList({ data, NumberCarts = false }) {
   let i = 0;
 
   const listItem = data?.map((item, index) => {
-    if (NumberCarts === true && item.urlToImage !== null && counter < 3) {
+    if (NumberCarts === true && item.image_url !== null && counter < 3) {
       counter++;
       return (
         <div key={index}>

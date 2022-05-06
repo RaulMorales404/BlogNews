@@ -50,6 +50,7 @@ a {
 .text-title {
     margin: 0px;
     width: 250px;
+    margin-top: 8px;
     color: #17202A;
     font-size: 20px;
     -webkit-line-clamp: 1;

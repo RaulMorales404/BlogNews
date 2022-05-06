@@ -3,18 +3,20 @@ import "./style.css";
 import getDate from "./formatHours";
 import { Link } from "react-router-dom";
 
-const Cart = ({ data, id = 3,count }) => {
-  if (data.urlToImage?.substr(0, 2) && data.urlToImage?.substr(0, 1) === "h") {
+const Cart = ({ data, id = 3, count }) => {
+  if (data.image_url?.substr(0, 2) && data.image_url?.substr(0, 1) === "h") {
     return (
-      <Link to={`/details/${data.urlToImage?.substr(-10)}`}>
+      <Link to={`/details/${data.image_url?.substr(-10)}`}>
         <div className="col-cart">
           <div>
-            <img className="img-cart" src={data.urlToImage}></img>
+            <img className="img-cart" src={data.image_url}></img>
           </div>
           <div>
             <div>
-              <h4 className={id <= count ? "text-category" : "text-categoryTwo"}>
-                {getDate(data.publishedAt)}
+              <h4
+                className={id <= count ? "text-category" : "text-categoryTwo"}
+              >
+                {getDate(data.pubDate)}
               </h4>
             </div>
             <div>

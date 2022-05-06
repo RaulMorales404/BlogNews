@@ -25,24 +25,19 @@ img {
 
 .text-categoryTwo {
     background: #1B2631;
-
     padding: 5px;
-    color:#fff;
+    color: #fff;
     width: 50%;
     font-size: 12px;
     margin: 0px;
     margin-top: 10px;
 }
 
-.text-title {
-    margin-top: 10px;
+.text-title-detail {
     margin-bottom: 10px;
-    color:#1B2631;
+    color: #1B2631;
     font-size: 20px;
-    -webkit-line-clamp: 1;
-    overflow: hidden;
     display: -webkit-box;
-    line-height: 20px;
     -webkit-box-orient: vertical;
 }
 
@@ -56,5 +51,4 @@ img {
     display: -webkit-box;
     line-height: 23px;
     font-family: 'Roboto', sans-serif;
-    
 }

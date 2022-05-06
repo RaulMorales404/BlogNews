@@ -6,7 +6,6 @@ import Nav from "../../components/nav";
 import images from "../../images/getImages";
 import SimpleImageSlider from "react-simple-image-slider";
 import Spiner from "../../components/spiner";
-
 import shallow from "zustand/shallow";
 import useResultsNews from "../../zustand/resultsNews";
 
@@ -20,7 +19,7 @@ const Home = () => {
     shallow
   );
   useEffect(() => {
-    if (results.length == 0) {
+    if (results.length === 0) {
       getNewsResults();
     }
   }, []);
